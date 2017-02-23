@@ -32,8 +32,6 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'corsheaders',
-    'polls.apps.PollsConfig',
-    'blogapp.apps.BlogappConfig',
     'mockup.apps.MockupConfig',
     'django.contrib.admin',
     'django.contrib.auth',
