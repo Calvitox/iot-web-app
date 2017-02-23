@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app = "platform">
+<head>
+	<title></title>
+	<link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
+	<style type="text/css">
+		tbody tr:hover {
+			cursor: pointer;
+		}
+
+		.banner{
+		    background-color: #7fc857;
+		    color: white;
+		    margin-bottom: 15px;
+		    padding: 70px 30px;
+		}
+
+		.tb-container{
+			height: 400px;
+			overflow-y: auto;
+		}
+	</style>
+</head>
+<body>
+		<div ui-view></div>
+</body>
+<script type="text/javascript" src="static/components/bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="static/components/bower_components/angular-resource/angular-resource.min.js"></script>
+<script type="text/javascript" src="static/components/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="static/js/app.js"></script>
+<script type="text/javascript" src="static/js/controllers.js"></script>
+<script type="text/javascript" src="static/js/services.js"></script>
+</html>

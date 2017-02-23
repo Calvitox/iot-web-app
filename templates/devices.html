@@ -1,0 +1,72 @@
+<div class="container-fluid">
+	<div class="row banner">
+		<div class="col-md-12 text-center">
+				<h3>SENSOR PLATFORM</h3>			
+			
+			<p class="lead col-md-12 text-center">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.
+			</p>
+						
+		</div>
+	</div>
+		
+		<div class="row">
+			<div class="col-md-4">
+				<div class="col-md-offset-4 col-md-4 text-center">
+					<span class="glyphicon glyphicon-search" style="font-size: 5em;"></span>
+				</div>
+				<div class="col-md-offset-3 col-md-6 pull-left">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</p>
+				</div>					
+			</div>
+			<div class="col-md-4">
+				<div class="col-md-offset-4 col-md-4 text-center">
+					<span class="glyphicon glyphicon-search" style="font-size: 5em;"></span>
+				</div>
+				<div class="col-md-offset-3 col-md-6 pull-left">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="col-md-offset-4 col-md-4 text-center">
+					<span class="glyphicon glyphicon-search" style="font-size: 5em;"></span>
+				</div>
+				<div class="col-md-offset-3 col-md-6 pull-left">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+					</p>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6 tb-container">
+				<table class="table table-bordered table-hover">
+					<thead ng-click="h()">
+						<th>ZONE</th>
+						<th>NAME</th>
+						<th>ID</th>
+					</thead>
+					<tbody>
+						<tr ng-repeat="item in items" ng-click="pick(item.restaurant_id)">
+							<td>{{item.borough}}</td>
+							<td>{{item.name}}</td>
+							<td>{{item.restaurant_id}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
