@@ -11,7 +11,7 @@ import datetime
 import pymongo
 import json
 
-connect = Con('192.168.66.48',27017)
+connect = Con()
 
 @api_view(['GET', 'POST'])
 @csrf_exempt
