@@ -11,21 +11,21 @@ import datetime
 import pymongo
 import json
 
-connect = Con()
+connect = Con('192.168.66.48',27017)
 
 @api_view(['GET', 'POST'])
 @csrf_exempt
 def index(request): 
     # Get all posts from DB
-    items =  connect.db.restaurants.find()
-    items.sort([('borough', pymongo.ASCENDING)])
+    items =  connect.db.meta.find()
+    items.sort([('dev_id', pymongo.ASCENDING)])
     items.limit(50)
     itemsJS = dumps(items)
 
     if request.method == 'POST':
         id = request.data.get('id')
         if id != None:
-        	res =  connect.db.restaurants.find({'restaurant_id':id})
+        	res =  connect.db.data.find({'dev_id':id})
         	dev = dumps(res)
         	return Response(dev)
         else:
