@@ -15,4 +15,3 @@ RUN pip install django djangorestframework pymongo django-cors-headers
 WORKDIR /usr/share/nginx/html/
 RUN git clone https://github.com/calvitox/iot-web-app.git iot
 WORKDIR iot
-CMD [ "./run.sh", "&"]
