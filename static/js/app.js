@@ -29,7 +29,7 @@
 
         ;
 
-        $urlRouterProvider.otherwise('/');
+        //$urlRouterProvider.otherwise('/');
     }])
 
 })();
