@@ -23,13 +23,15 @@ def index(request):
     itemsJS = dumps(items)
 
     if request.method == 'POST':
-        id = request.data.get('id')
+        id = request.data.get('id')       
         if id != None:
-        	res =  connect.db.data.find({'dev_id':id})
-        	dev = dumps(res)
-        	return Response(dev)
+            realid = id.split('_')[1]
+            res =  connect.db.data.find({'dev_id':realid})
+            res.sort([('dev_time', pymongo.ASCENDING)])
+            dev = dumps(res)
+            return Response(dev)
         else:
-        	return Response(itemsJS)
+            return Response(itemsJS)
     else:
         return HttpResponse('REST SERVICE')
         #return render(request, 'index.html')

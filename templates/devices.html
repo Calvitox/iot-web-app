@@ -55,15 +55,15 @@
 			<div class="col-md-6 tb-container">
 				<table class="table table-bordered table-hover">
 					<thead ng-click="h()">
-						<th>ZONE</th>
-						<th>NAME</th>
-						<th>ID</th>
+						<th>Device id</th>
+						<th>profile</th>
+						<th>Record Time</th>
 					</thead>
 					<tbody>
-						<tr ng-repeat="item in items" ng-click="pick(item.restaurant_id)">
-							<td>{{item.borough}}</td>
-							<td>{{item.name}}</td>
-							<td>{{item.restaurant_id}}</td>
+						<tr ng-repeat="item in items" ng-click="pick(item.dev_id)">
+							<td>{{item.dev_id}}</td>
+							<td>{{item.prof_id}}</td>
+							<td>{{item.rec_time}}</td>
 						</tr>
 					</tbody>
 				</table>
