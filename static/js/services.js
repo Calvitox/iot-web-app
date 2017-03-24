@@ -7,7 +7,7 @@
 				function getAll(){
 					var dfd = $q.defer();
 
-			        $http.post('http://127.0.0.1:8000/main/')
+			        $http.post('http://0.0.0.0:8000/main/')
 			        	.then(function(response){
 						res = JSON.parse(response.data);//success
 						dfd.resolve(res);
@@ -23,7 +23,7 @@
 
 		      	postData = {'id':id};
 
-		        $http.post('http://127.0.0.1:8000/main/',postData)
+		        $http.post('http://0.0.0.0:8000/main/',postData)
 		        	.then(function(response){
 					res = JSON.parse(response.data);//success
 					dfd.resolve(res);
